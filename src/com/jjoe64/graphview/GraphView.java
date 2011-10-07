@@ -319,6 +319,12 @@ abstract public class GraphView extends LinearLayout {
 	public void addSeries(GraphViewSeries series) {
 		graphSeries.add(series);
 	}
+	
+	public void clearSeries() {
+		graphSeries.clear();
+		this.horlabels = null;
+		this.verlabels = null;
+	}
 
 	protected void drawLegend(Canvas canvas, float height, float width) {
 		int shapeSize = 15;
